@@ -1,5 +1,5 @@
 ---
-- role: telusdigital.ssl-certificate
+- role: telusdigital.certbot
 - role: telusdigital.nginx
 - role: telusdigital.php
 - role: telusdigital.autodeploy

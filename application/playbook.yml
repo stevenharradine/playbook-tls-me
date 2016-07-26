@@ -2,11 +2,12 @@
 - connection: local
   hosts: localhost
   roles:
-    - role: telusdigital.ssl-certificate
+    - role: telusdigital.certbot
     - role: telusdigital.nginx
     - role: telusdigital.php
     - role: telusdigital.autodeploy
   vars:
+    certbot_domain: "{% if environment_tier not in ['production'] %}{{ environment_tier }}{% endif %}.tls-me.telus.digital"
     nginx_ssl_enabled: yes
     nginx_ssl_enforced: yes
     nginx_php_enabled: yes
