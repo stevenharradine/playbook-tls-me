@@ -15,5 +15,5 @@
     nginx_ssl_should_degrade_security_to_accomodate_old_browsers: yes
     nginx_ssl_pass_tls_version: yes
     autodeploy_repository_origin: https://github.com/telusdigital/tls-me.git
-    autodeploy_repository_origin: master
+    autodeploy_repository_branch: master
     autodeploy_inital_deploy: yes
