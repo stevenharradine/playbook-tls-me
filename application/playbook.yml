@@ -7,7 +7,10 @@
     - role: telusdigital.php
     - role: telusdigital.autodeploy
   vars:
+    nginx_ssl_enabled: yes
+    nginx_ssl_enforced: yes
     nginx_php_enabled: yes
     nginx_creates_docroot: yes
     autodeploy_repository_origin: https://github.com/telusdigital/tls-me.git
+    autodeploy_repository_origin: master
     autodeploy_inital_deploy: yes
